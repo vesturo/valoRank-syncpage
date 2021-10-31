@@ -1,3 +1,8 @@
 setInterval(function(){ 
-    //this code runs 30 minutes?
+    ForceSync();
 }, 1800000);
+
+
+function ForceSync() {
+    foreach(???)
+}
