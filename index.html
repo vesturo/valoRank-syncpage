@@ -55,7 +55,7 @@
                                 <button class="btn btn-primary" style="display: none;" id="continue" onclick="riotlogin()"> Link your Valorant Account</button>  
                             </div>
                             <div class="row d-flex justify-content-center mt-3">
-                            <span id="logoutspan" style="display: none;">not <a href="">Vesturo?</a></span>
+                            <span id="logoutspan" style="display: none; text-align: end;">not <a href="">Vesturo?</a></span>
                             </div>
                     </div>
                     <br />
@@ -143,7 +143,7 @@
 			.then(response => {
 				const { id,username, discriminator, avatar} = response;
 				document.getElementById('info').innerText = `welcome back,`;
-        document.getElementById('username').innerText = `${username}#${discriminator} (${id})`;
+        document.getElementById('username').innerText = `${username}#${discriminator}`;
         document.getElementById('login').style.display = 'block';
         document.getElementById('userimage').src=`https://cdn.discordapp.com/avatars/${id}/${avatar}.png`;
         document.getElementById('login').style.display = 'none';
