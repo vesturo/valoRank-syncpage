@@ -1,6 +1,6 @@
 const express = require('express');
-const { port } = require('./config.json');
-const { db } = require('./connection.js');
+const bodyParser = require("body-parser");
+const { port } = require('./config/config.json');
 const startSync	 = setInterval(function(){ 
     ForceSync();
 }, 1000);
